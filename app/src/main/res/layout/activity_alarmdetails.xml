@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:contentDescription="Plant Image"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="10dp"
+                android:background="#c705fd09"/>
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name here"
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/alarmtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Alarm Time"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="type"/>
+
+            <TextView
+                android:id="@+id/flowering"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flowering"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/bloomtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bloom Time"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:text="Description here"
+                android:layout_marginBottom="15dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/edalarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
